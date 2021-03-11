@@ -110,22 +110,17 @@ a {
   max-height: 465px;
 }
 
-.about__image img {
-  width: 100%;
-}
-
 .about__text {
   margin-left: 63px;
   line-height: 30px;
-  width: 528px;
 }
 
 .about__block {
   bottom: 0;
   position: absolute;
-  height: 273px;
   width: 100%;
   background: #8D7370;
+  padding: 85px 0 81px;
 }
 
 .about__items {
@@ -141,7 +136,6 @@ a {
   line-height: 37px;
   color: #fff;
   text-align: center;
-  margin-top: 85px;
   text-transform: uppercase;
 }
 
@@ -276,17 +270,21 @@ a {
   width: 285px;
 }
 
-.team__work-round {
+.team__work-block{
   width: 70px;
   height: 70px;
-  border-radius: 50%;
-  background: #8D7370;
   display: flex;
+  background: #8D7370;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   font-size: 30px;
   color: #fff;
+}
+
+.team__work_round {
+  border-radius: 50%;
+  
 }
 
 .team__work-info {
