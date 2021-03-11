@@ -11,7 +11,8 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: #533738;
-  background: #E5E5E5;
+  background: #EFE6E4;
+  
 }
 
 a {
@@ -74,7 +75,7 @@ a {
   margin-bottom: 21px;
 }
 
-.promo__button {
+.button {
   width: 309px;
   height: 74px;
   background: #CC8B86;
@@ -158,7 +159,6 @@ a {
   margin: 25px 0;
 }
 
-
 .projects__item {
   max-width: 692px;
   max-height: 451px;
@@ -172,18 +172,22 @@ a {
 
 .projects__item_little {
   max-width: 488px;
+  
 }
 
 .projects__item img {
   width: 100%;
 }
+
 .projects__all {
   text-align: center;
 }
+
 .projects__all a {
   position: relative;
 }
-.projects__all a:after{
+
+.projects__all a:after {
   content: '';
   display: inline-block;
   width: 60px;
@@ -192,4 +196,221 @@ a {
   position: absolute;
   top: 5px;
   right: -70px;
+}
+
+.projects__item_little .projects__item_hovered {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(100, 72, 69, 0.8);
+  top: 0;
+  display: none;
+  padding: 86px 35px 122px;
+}
+
+.projects__item_little:hover .projects__item_hovered {
+  display: block;
+}
+
+
+.hover__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #fff;
+}
+
+.hover__subtitle {
+  line-height: 30px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.team {
+  padding: 50px 0 80px;
+  background: #E2C4BA;
+}
+
+.team__items {
+  display: flex;
+  justify-content: space-between;
+  
+  width: 1036px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.team__item {
+  width: 320px;
+}
+
+.team__item img {
+  width: 100%;
+}
+.team__info {
+  margin-top: 10px;
+  line-height: 30px;
+}
+
+.team__work {
+  margin-top: 35px;
+}
+
+.team__work-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.team__work-item {
+  width: 285px;
+}
+.team__work-round {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #8D7370;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 30px;
+  color: #fff;
+}
+.team__work-info {
+  margin-top: 19px;
+  line-height: 30px;
+  text-align: center;
+}
+.feedback {
+  padding: 65px 0;
+}
+
+.feedback__inner {
+  width: 1036px;
+  padding: 40px 101px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  position: relative;
+}
+
+.feedback__img {
+  width: 407px;
+  height: 272px;
+}
+
+.feedback__img img {
+  width: 100%;
+}
+
+.feedback__images {
+  height: 568px;
+}
+.feedback__img:nth-child(2) {
+  margin-top: 24px;
+}
+
+.feedback__text {
+  width: 407px;
+  min-height: 384px;
+  line-height: 30px;
+  margin-right: 20px;
+  margin-top: 91px;
+}
+
+.feedback__inner::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #CC8B86;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  background-image: url('../images/arrow_white.svg') ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.feedback__inner::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #CC8B86;
+  top: 50%;
+  right: 3px;
+  background-image: url('../images/arrow_white.svg') ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: translateY(-50%) scale(-1,1);
+  cursor: pointer;
+}
+
+.request {
+  padding: 0 101px 0 181px;
+  background: #8D7370;
+}
+
+.request__inner {
+  display: flex;
+  justify-content: center;
+}
+.request__form-inner {
+  width: 508px;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+.request .title {
+  color: #fff;
+  text-align: left;
+}
+
+.request__info {
+  margin-top: 24px;
+  color: rgba(255,255,255, .6);
+  margin-bottom: 9px;
+}
+
+.request__form input {
+  width: 100%;
+  background: #8D7370;
+  color: #fff;
+  border:none;
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  line-height: 30px;
+  outline: none;
+  margin-top: 35px;
+}
+
+.request__form input::placeholder {
+  color: #fff;
+}
+
+.request__form .button {
+  margin-top: 31px;
+}
+
+.footer {
+
+  padding: 37px 100px;
+}
+.footer__inner {
+  position: relative;
+}
+.locate {
+  display: inline-block;
+  margin-left: 42px;
+}
+.buisnessman {
+  position: absolute;
+  right: 0;
+  text-align: right;
 }
